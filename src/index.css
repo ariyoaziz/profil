@@ -1,0 +1,71 @@
+/* eslint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* eslint-enable */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* index.css */
+
+/* Animasi untuk mengetik */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0; /* Menambahkan efek loop */
+  }
+}
+
+/* Animasi untuk cursor berkedip */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #fff; /* Warna cursor */
+  }
+}
+
+/* Menambahkan animasi typewriter dan blink pada teks */
+.typing-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Mulai dengan lebar 0 */
+  animation: typing 10s steps(50) infinite, blink 0.75s step-end infinite; /* Mengetik teks dan cursor berkedip */
+  text-align: center;
+  margin: 20px auto 0 auto;
+  word-wrap: break-word;
+}
+
+/* Menambahkan efek cursor berkedip */
+.cursor-blink {
+  display: inline-block;
+  border-right: 2px solid #fff; /* Garis cursor */
+  animation: blink 0.75s step-end infinite; /* Animasi kedipan cursor */
+}
+/* styles.css atau global.css */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+/* Optional: Styling untuk background body */
+body {
+  background-color: #f3f4f6; /* Warna background abu-abu */
+}
