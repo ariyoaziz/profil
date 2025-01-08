@@ -39,7 +39,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   width: 0; /* Mulai dengan lebar 0 */
-  animation: typing 10s steps(50) infinite, blink 0.75s step-end infinite; /* Mengetik teks dan cursor berkedip */
+  animation: typing 20s steps(50) infinite, blink 0.75s step-end infinite; /* Mengetik teks dan cursor berkedip */
   text-align: center;
   margin: 20px auto 0 auto;
   word-wrap: break-word;
